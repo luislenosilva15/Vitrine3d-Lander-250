@@ -1,0 +1,375 @@
+/* html, body {
+  background-color: #171717;
+  margin: 0; padding: 0;
+  width: 100%;
+} */
+
+@font-face {
+  font-family: EvanstonTavern-1858Regular;
+  src: url('../font/EvanstonTavern-1858/EvanstonTavern-1858Regular.ttf') format("truetype");
+}
+
+.navbar {
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 2 !important; 
+}
+
+.custom-logo {
+  height: 1.8rem;
+}
+
+.custom-brand, .custom-navigation {
+  width: 30%;
+}
+
+.custom-navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-navbar {
+  background-color: #ffffff;
+  padding: 0.8rem 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.custom-navbar-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #808285;
+  margin: 0 0.8em;
+  font-family: EvanstonTavern-1858Regular;
+  font-size: 1.2rem;
+}
+
+.custom-navbar-subitem {
+  margin: 0;
+  text-decoration: none;
+}
+
+.custom-navbar-right-group {
+  display: flex;
+  align-items: baseline;
+  width: 30%;
+  justify-content: flex-end;
+}
+
+.custom-ml {
+  margin-left: 1.6rem;
+}
+
+.custom-mb {
+  margin-bottom: 0.3rem;
+}
+
+.custom-motorcycle-options {
+  position: fixed;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.custom-motorcycle-model {
+  position: fixed;
+  /* left: 50%; top: 50%;
+  transform: translate(-37%, -45%); */
+  z-index: 1;
+}
+
+.custom-contact-button {
+  position: fixed;
+  background-color: #2846d2;
+  bottom: 3rem;
+  right: 3rem;
+  font-family: EvanstonTavern-1858Regular;
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding-right: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  border-radius: 5rem;
+  z-index: 2;
+}
+
+#custom-testdrive-button {
+  position: fixed;
+  background-color: #ffffff;
+  font-family: EvanstonTavern-1858Regular;
+  font-size: 1.6rem;
+  bottom: 7rem;
+  right: 3rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.3rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 5rem;
+  border: 2px solid #e5e5e5;
+  z-index: 2;
+  display: none;
+}
+
+.custom-contact-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.custom-motorcycle-content {
+  margin-left: 7rem;
+  z-index: 3;
+  padding: 30px;
+}
+
+.custom-title {
+  font-family: EvanstonTavern-1858Regular;
+  font-size: 2.8rem;
+  color: #393c41;
+}
+
+.custom-description {
+  color: #9395a5;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* END-RADIO */
+
+.custom-radio-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-top: 0.2rem; 
+}
+
+.custom-radio-name {
+  text-transform: uppercase;
+  color: #3c3c3c;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.custom-radio-description {
+  color: #3c3c3c;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 1194px) and (max-width: 1800px) {
+  /* .custom-motorcycle-model { left: 55% } */
+  .custom-motorcycle-options { width: 30% }
+}
+
+@media (min-width: 1092px) and (max-width: 1194px) {
+  /* .custom-motorcycle-model { left: 50% } */
+  .custom-motorcycle-options { width: 28% }
+  .custom-motorcycle-content { margin-left: 3rem }
+}
+
+@media (max-width: 1091px) {
+  .custom-motorcycle-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+    width: 100%;
+  }
+
+  .custom-radios {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .custom-motorcycle-options { width: 100% }
+}
+
+/* .custom-motorcycle-options {
+  position: fixed;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.custom-motorcycle-model {
+  position: fixed;
+  left: 50%; top: 50%;
+  transform: translate(-33%, -45%);
+  z-index: 1;
+}
+ */
+
+@media (max-width: 1090px) {
+  .custom-motorcycle-label {
+    justify-content: center;
+  }
+
+  .custom-motorcycle-model {
+    position: fixed;
+    /* left: 50%;
+    transform: translate(-50%, -25%); */
+    z-index: 1;
+    /* height: 75%; */ 
+  }
+
+  .custom-motorcycle-content {
+    position: fixed;
+    top: 5rem;
+    margin-left: 0rem;
+  }
+
+  .custom-contact-button {
+    display: none;
+  }
+
+  .custom-margin {
+    margin-top: 2rem;
+  }
+
+  #custom-testdrive-button {
+    bottom: 3rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .custom-title {
+    font-size: 1.6rem;
+  }
+
+  .custom-description {
+    font-size: 0.6rem;
+  }
+}
+
+  #custom-back-button {
+    position: fixed;
+    background-color: #ffffff;
+    font-family: EvanstonTavern-1858Regular;
+    font-size: 1.7rem #ffff;
+    color: #2846d2;
+    font-weight: bold;
+    top: 25rem;
+    right: 13rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 5rem;
+    border: 2px solid #2846d2;
+    z-index: 3;
+    display: none;
+  }
+
+  #custom-canvas-description-motor {
+    position: fixed;
+    background-color: #ffffff;
+    font-family: EvanstonTavern-1858Regular;
+    font-size: 1.6rem;
+    top: 8rem;
+    right: 5rem;
+    padding-bottom: 10rem;
+    padding-top: 13rem;
+    padding-left: 13rem;
+    padding-right: 14rem;
+    border-radius: 0rem;
+    border: 1px solid #e5e5e5;
+    z-index: 2;
+    display: none;
+  }
+
+  #custom-title-description-1 {
+    font-family: EvanstonTavern-1858Regular;
+    font-size: 1.5rem;
+    right: 21.2rem;
+    top: 9rem;
+    color: #65676b;
+    position: fixed;
+  }
+
+
+  #custom-title-description-2 {
+    font-family: EvanstonTavern-1858Regular;
+    font-size: 1.95rem;
+    right: 13.7rem;
+    top: 11.5rem;
+    color: #393c41;
+    position: fixed;
+  }
+
+  #custom-title-description-3 {
+    font-family: EvanstonTavern-1858Regular;
+    font-size: 0.98rem;
+    right: 6.9rem;
+    top: 18rem;
+    color: #8f939b;
+    position: fixed;
+  }
+
+    /* RODA */
+
+    #custom-canvas-description-roda {
+      position: fixed;
+      background-color: #ffffff;
+      font-family: EvanstonTavern-1858Regular;
+      font-size: 1.6rem;
+      top: 8rem;
+      right: 5rem;
+      padding-bottom: 10rem;
+      padding-top: 13rem;
+      padding-left: 13rem;
+      padding-right: 14rem;
+      border-radius: 0rem;
+      border: 1px solid #e5e5e5;
+      z-index: 2;
+      display: none;
+    }
+  
+
+  #custom-title-description-roda-1 {
+    font-family: EvanstonTavern-1858Regular;
+    font-size: 1.5rem;
+    right: 22.5rem;
+    top: 9rem;
+    color: #65676b;
+    position: fixed;
+  }
+
+
+  #custom-title-description-roda-2 {
+    font-family: EvanstonTavern-1858Regular;
+    font-size: 1.95rem;
+    right: 19rem;
+    top: 11.5rem;
+    color: #393c41;
+    position: fixed;
+  }
+
+  #custom-title-description-roda-3 {
+    font-family: EvanstonTavern-1858Regular;
+    font-size: 0.98rem;
+    right: 7.1rem;
+    top: 18rem;
+    color: #8f939b;
+    position: fixed;
+  }
+
+
+@media (min-width: 1091px) and (max-width: 1422px) {
+  .custom-navbar-subitem { display: none }
+
+  .custom-navigation { width: 40% }
+  .custom-brand, .custom-navbar-right-group { width: 20% }
+
+  .custom-mb { margin-bottom: 0 }
+}
+
+@media (max-width: 1090px) {
+  .custom-navbar-subitem { display: none }
+
+  .custom-navigation, .custom-login-label { display: none }
+  .custom-brand, .custom-navbar-right-group { width: 20% }
+
+  .custom-mb { margin-bottom: 0 }
+  .custom-navbar { padding: 0.8rem 0 }
+}
