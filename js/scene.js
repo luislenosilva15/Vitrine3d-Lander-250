@@ -2,7 +2,7 @@ import { GLTFLoader } from 'https://threejsfundamentals.org/threejs/resources/th
 
 let model, bluefairing, blackfairing;
 let isAnimation = true;
-let buttonGet, buttonMotor, buttonFrontWheel, buttonBackWheel, buttonPower;
+let buttonGet, buttonMotor, buttonFrontWheel, buttonBackWheel, buttonPower, buttonOff;
 let mouse = {};
 let animationIndex = 0;
 let isActivate;
@@ -125,9 +125,15 @@ scene.add(pointLightFour);
 function creteButton() {
     const map = new THREE.TextureLoader().load( './img/spriteButton.png');
     const material = new THREE.SpriteMaterial( { map: map } );
-    buttonGet = new THREE.Sprite(material);
+
+    const mapRed = new THREE.TextureLoader().load( './img/iconRed.png');
+    const materialRed = new THREE.SpriteMaterial( { map: mapRed } );
+
+    const mapGreen = new THREE.TextureLoader().load( './img/iconGreen.png');
+    const materialGreen = new THREE.SpriteMaterial( { map: mapGreen } );
 
     //Button Get Motorcycle
+    buttonGet = new THREE.Sprite(material);
     buttonGet.position.set(0, 0.35, 0.30);
     buttonGet.scale.set(0.10, 0.10);
     buttonGet.name = "buttonGet";
@@ -151,10 +157,19 @@ function creteButton() {
     buttonBackWheel.name = "buttonBackWheel";
 
     //Button power motorcycle
-    buttonPower  = new THREE.Sprite(material);
+    
+    buttonPower  = new THREE.Sprite(materialRed);
     buttonPower.position.set(-0.01, 0.52, -0.30);
     buttonPower.scale.set(0.05, 0.05);
     buttonPower.name = "buttonPower";
+
+    
+    //Button off motorcycle
+    
+    buttonOff  = new THREE.Sprite(materialGreen);
+    buttonOff.position.set(-0.01, 0.52, -0.30);
+    buttonOff.scale.set(0.05, 0.05);
+    buttonOff.name = "buttonOff";
     
     scene.add(buttonGet, buttonFrontWheel, buttonMotor, buttonBackWheel);
 };
@@ -198,10 +213,13 @@ function OnClickButton() {
             camAnimation(-0.14, -0.16, 0.72, 2400, 0.91, 0.107, 0.81);
         };
 
-        if(i.object.name == "buttonPower") {
+        if(i.object.name == "buttonPower" || i.object.name == "buttonOff" ) {
             if(audio.isPlaying){   
                 audio.stop();
                 exitMotorcycleButton.style.display= "block";
+                scene.remove(buttonOff);
+                scene.add(buttonPower);
+
             } else {
                 const file = './audio/motorAudio.mp3'; 
                 loaderAudio.load( file, function (buffer) {
@@ -209,6 +227,9 @@ function OnClickButton() {
                 audio.setBuffer(buffer);
                 audio.play();
                 exitMotorcycleButton.style.display= "none";
+                scene.add(buttonOff);
+                scene.remove(buttonPower);
+
                 })
             }
         };
@@ -369,7 +390,6 @@ blackUnselected.addEventListener('click', selectVariantBlack);
 
 const animate = function () {
 
-    console.log(animationIndex);
     renderer.domElement.addEventListener('mousedown', clickDown);
     renderer.domElement.addEventListener('mouseup', clickUp);
 
