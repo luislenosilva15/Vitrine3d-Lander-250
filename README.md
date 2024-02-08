@@ -1,26 +1,28 @@
-# Tour Virtual 3D da Yamaha com Three.js
+# Yamaha 3D Virtual Tour with Three.js
 
-Este projeto oferece uma experiência interativa de tour virtual 3D para uma moto Yamaha, permitindo aos usuários visualizar a moto em diferentes cores, subir nela e até mesmo "ligá-la". Utilizamos Three.js, CSS e HTML para criar uma experiência de usuário imersiva e interativa.
+This project offers an interactive 3D virtual tour experience of a Yamaha motorcycle, allowing users to view the bike in different colors, get on it, and even "start" it. We use Three.js, CSS, and HTML to create an immersive and interactive user experience.
 
-## Características
+## Features
 
-- **Visualização em 3D:** Explore a moto Yamaha em um modelo 3D detalhado.
-- **Personalização de Cores:** Altere a cor da moto para visualizar diferentes acabamentos.
-- **Interação:** Suba na moto e experimente a sensação de ligar a Yamaha, tudo em um ambiente virtual.
+- 3D Visualization: Explore the Yamaha motorcycle in a detailed 3D model.
+- Color Customization: Change the bike's color to view different finishes.
+- Interaction: Get on the bike and experience the sensation of starting the Yamaha, all in a virtual environment.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- [Three.js](https://threejs.org/): Para renderização 3D no navegador.
-- HTML: Estrutura do projeto.
-- CSS: Estilização e responsividade.
+- Three.js: For 3D rendering in the browser.
+- HTML: Project structure.
+- CSS: Styling and responsiveness.
 
-## Demonstração
+## Demo
 
 https://luislenosilva15.github.io/Vitrine3d-Lander-250/
 
+## Screenshot
+
 ![Captura de Tela 2024-02-08 às 10 35 03](https://github.com/luislenosilva15/Vitrine3d-Lander-250/assets/45435291/1877a730-4ce8-49a3-9506-8bd2d816e2a7)
 
-## Contato
+## Contact
 
 https://www.linkedin.com/in/luislenosilva15/
 
