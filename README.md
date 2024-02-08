@@ -22,8 +22,6 @@ https://luislenosilva15.github.io/Vitrine3d-Lander-250/
 
 ## Contato
 
-Luis Leno
-
 https://www.linkedin.com/in/luislenosilva15/
 
 ---
