@@ -19,3 +19,11 @@ Este projeto oferece uma experiência interativa de tour virtual 3D para uma mot
 https://luislenosilva15.github.io/Vitrine3d-Lander-250/
 
 ![Captura de Tela 2024-02-08 às 10 35 03](https://github.com/luislenosilva15/Vitrine3d-Lander-250/assets/45435291/1877a730-4ce8-49a3-9506-8bd2d816e2a7)
+
+## Contato
+
+Luis Leno
+
+https://www.linkedin.com/in/luislenosilva15/
+
+---
